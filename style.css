@@ -1,0 +1,274 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4fdfc; /* soft aqua background */
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+section.secondary-section {
+  background-color: #fff8f0; /* light sand tone */
+}
+
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-eq {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-3-columns-1-2-2 {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.img-responsive {
+  width: 100%;
+  display: block;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 16 / 9.5;
+}
+
+.instagram-embeds {
+  margin: 30px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px;
+  background-color: #009688; /* tropical teal */
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00bfa5; /* lighter aqua hover */
+}
+
+header {
+  background-image: linear-gradient(
+      rgba(0, 150, 136, 0.6),
+      rgba(0, 150, 136, 0.6)
+    ),
+    url(/images/hero-barbados.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 200px 0;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1;
+  margin: 30px 0;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+  padding: 16px 32px;
+  margin-top: 32px;
+  display: inline-block;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #ff7f50; /* coral accent */
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+header a:hover {
+  background: #ffa07a; /* lighter coral hover */
+}
+
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #009688;
+  opacity: 0.5;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #004d40; /* deep tropical green */
+  margin: 0;
+}
+
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  margin: 0;
+  color: #004d40;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  margin: 0;
+  color: #004d40;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #004d40;
+  opacity: 0.8;
+}
+
+.card {
+  background-color: white;
+  margin: 30px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 150, 136, 0.1);
+}
+
+.card-header.grid {
+  grid-gap: 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 10px;
+}
+
+footer {
+  background-image: linear-gradient(
+      rgba(0, 150, 136, 0.9),
+      rgba(0, 150, 136, 0.9)
+    ),
+    url(/images/footer-beach.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+  opacity: 1;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.8;
+  line-height: 24px;
+}
+
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
+  }
+}
