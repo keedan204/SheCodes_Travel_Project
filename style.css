@@ -35,9 +35,21 @@ section.secondary-section {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+/* New: two equal-sized images layout */
+.grid-2-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  margin-top: 24px;
+}
+
 .img-responsive {
   width: 100%;
+  height: 100%;
   display: block;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 150, 136, 0.1);
 }
 
 .embed {
@@ -78,7 +90,7 @@ header {
       rgba(0, 150, 136, 0.6),
       rgba(0, 150, 136, 0.6)
     ),
-    url(/images/hero-barbados.jpg);
+    url(https://raw.githubusercontent.com/keedan204/SheCodes_Travel_Project/refs/heads/main/premium_photo-1691675470738-fa21455faa05.jfif);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -242,6 +254,7 @@ footer p {
   line-height: 24px;
 }
 
+/* Responsive adjustments */
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
@@ -255,7 +268,8 @@ footer p {
   header h3 {
     font-size: 12px;
   }
-  .grid {
+  .grid,
+  .grid-2-images {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
